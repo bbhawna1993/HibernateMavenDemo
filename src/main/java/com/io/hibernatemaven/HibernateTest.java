@@ -22,7 +22,7 @@ public class HibernateTest {
 
 		UserDetails user=new UserDetails();
 		user.setName("first user");
-		user.setAddress(address);
+		user.setHomeAddress(address);
 		session.save(user);
 
 		session.getTransaction().commit();
