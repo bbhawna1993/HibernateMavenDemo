@@ -1,13 +1,19 @@
 package com.io.hibernatemaven;
 
+import javax.persistence.Column;
 import javax.persistence.Embeddable;
+
 
 @Embeddable
 public class Address {
 
+	@Column(name="USER_CITY")
 	private String city;
+	@Column(name="USER_STATE")
 	private String state;
+	@Column(name="USER_STREET")
 	private String street;
+	@Column(name="USER_PIN")
 	private int pin;
 
 	public String getCity() {
