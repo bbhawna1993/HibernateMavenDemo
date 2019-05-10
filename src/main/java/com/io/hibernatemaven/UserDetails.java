@@ -28,10 +28,10 @@ public class UserDetails {
 	@Id
 	private int id;
 	//@Transient:-indicates that field will not be stored in the table.
-	@Transient
+	//@Transient
 	private String name;
 	//@Lob:-Used for large java objects.with this annotation,the value in userdesc will be stored in numbers.
-	@Lob
+	//@Lob
 	private String userDescription;
 	@Temporal(TemporalType.TIME)
 	private Date joinedDate;

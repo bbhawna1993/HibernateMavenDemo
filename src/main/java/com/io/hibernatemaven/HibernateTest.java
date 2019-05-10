@@ -17,13 +17,12 @@ public class HibernateTest {
 		user.setUserDescription("user description");
 
 		SessionFactory sessionFactory=new Configuration().configure().buildSessionFactory();
+
 		Session session=sessionFactory.openSession();
-
 		session.beginTransaction();
-
 		session.save(user);
-
 		session.getTransaction().commit();
+		session.close();
 	}
 
 }
